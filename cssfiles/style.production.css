@@ -1,0 +1,542 @@
+/* /* 
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+
+/*  */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    /* color */
+
+    color: #2e2e30ef;
+    /* typography */
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    height: 95vh;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h1 {
+    /* typography */
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h2 {
+    /* typography */
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    /* typography */
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    filter: grayscale(89%);
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+
+
+}
+
+/* .header__item {
+    flex: 0 1 200px;
+
+} */
+
+.header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.navigation-list {
+    list-style-type: none;
+
+}
+
+
+
+.navigation-list li {
+    display: inline-block;
+    margin: 15px;
+}
+
+
+
+
+.navigation-list__item {
+    text-decoration: none;
+    color: #0e0ec0
+}
+
+.navigation-list__item_index {
+    text-decoration: none;
+    color: #fffdfe;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+}
+
+.waterfall {
+    border: solid yellowgreen 4px;
+    height: 100px;
+    width: 208px;
+}
+
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid__item {
+    background-color: lightgray;
+    text-align: center;
+}
+
+.work-section__projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.work-section__projects---item {
+    background-color: #adaddaef;
+    text-align: center;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+}
+
+.work-section__projects---item:last-child {
+    -ms-grid-column: 3;
+    grid-column: 3 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+}
+
+.content_pics {
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+
+}
+
+.content_pics_items {
+
+    border: #053469 solid 3px;
+    border-radius: 30%;
+    margin: 1px;
+
+}
+
+/*                                                           Footer Section styling */
+/* footer {
+
+    background-color: rgb(185, 178, 185);
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+} */
+/* 
+.page-footer {
+    clear: both;
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+
+
+    height: 27px;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+} */
+.page-footer {
+    clear: both;
+    text-align: center;
+    background-color: #dfc1c1;
+
+    width: 100%;
+}
+
+
+/* .social-media {
+    border: 2px solid #049766;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+} */
+
+.socialmedia-icon {
+    /*border: 2px solid #970404;*/
+    width: 40px;
+    height: auto;
+    margin: 3px;
+    border: #553c9a solid 1px;
+
+    padding: 0 0.5rem;
+
+
+}
+
+
+
+
+
+
+
+
+/* 
+=====================================
+3. INTERACTIVE ELEMENTS
+=====================================
+*/
+
+
+a {
+    color: #0882bbef;
+    /*margin: 5px;*/
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a:visited {
+    color: undefined;
+}
+
+a:active {
+    color: undefined;
+}
+
+
+.button__secondary {
+    background-color: #053469;
+    color: coral;
+}
+
+
+
+.button {
+    display: table;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Open Sans";
+    font-size: 20px;
+    margin: 0 auto;
+    outline: none;
+    background-color: #7b5735;
+    color: rgb(15, 1, 1);
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    border-radius: 2px;
+}
+
+
+
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+
+/* 
+=====================================
+4. PRIMARY NAVIGATION
+=====================================
+<header         class="page-header"
+<img            class="page-header__item" class="page-header__logo"
+<nav            class="page-header__item" class="navigation-menu"
+<ul             class="navigation-list"
+<li             <a class="navigation-list__item" class="navigation-list__item--active"
+*/
+
+/* === header === */
+.page-header {
+    /* color */
+    background-color: #acacacef;
+    /* layout */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.page-header__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 200px;
+    flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+    text-align: right;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+/* === UL === */
+/* .navigation-list {
+    list-style-type: none;
+} */
+
+/* === links (list) === */
+.navigation-list li {
+
+    display: inline-block;
+    /*margin: 5px 20px;*/
+    margin: 15px;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+
+
+
+
+/* 
+=====================================
+5. FOOTER
+=====================================
+<footer         class="page-footer"></footer>
+<div            class="social-media
+<img            class="social-media__item--icon" 
+*/
+
+.social-media {
+    /* color */
+
+    /* layout */
+    /* clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 27px;
+    position: relative;
+    width: 100%;
+    min-height: 100%; */
+
+}
+
+
+
+
+.social-media__item--icon {
+    width: 25px;
+    height: auto;
+    margin: 2px;
+}
+
+/* 
+=====================================
+6. HOME PAGE
+=====================================
+*/
+
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile_picture {
+
+
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+
+
+.profile_text {
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100px;
+    flex: 1 1 100px;
+    color: #fffdfe
+}
+
+
+/* 
+=====================================
+7. WORK PAGE
+=====================================
+*/
+
+
+/******start grid fallback */
+/* .project-list__item {
+    display: inline-block;
+    width: 33%;
+}
+
+/******end grid fallback */
+
+
+.project-list__item {
+    background-color: #acacacef;
+    /*text-align:center;*/
+    width: auto;
+    min-height: auto;
+    margin: 0;
+}
+
+.project-list__item:last-child {
+    -ms-grid-column: 3;
+    grid-column: 3 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+}
+
+*/ .sun {
+    -webkit-animation: 4s color-change infinite alternate linear;
+    animation: 4s color-change infinite alternate linear;
+}
+
+
+
+
+.cloud-back {
+    -webkit-animation: 10s cloud-move-reverse infinite alternate linear;
+    animation: 10s cloud-move-reverse infinite alternate linear;
+}
+
+
+/* 
+=====================================
+9. Contact PAGE
+=====================================
+*/
+.contact-container {
+
+    border: 2px solid #acacacef;
+    /* ISSUE: Why does it not work ? */
+    background-color: #fffdfe;
+}
+
+.contactPage-main {
+    text-align: center;
+}
+
+.standard-label,
+.standard-input {
+    display: block;
+    text-align: left;
+    max-width: 180px;
+    margin: auto;
+    padding: auto;
+}
+
+.registration-container {
+    padding: 20px 0;
+}
+
+.registration-container__form {
+    padding: 20px 0;
+}
+
+
+
+
+/**************************************************************************** Media */
+
+
+
+
+.project-list__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+
+#background-video {
+    width: 100vw;
+
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
